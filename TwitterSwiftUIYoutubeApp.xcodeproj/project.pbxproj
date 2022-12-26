@@ -25,6 +25,13 @@
 		99D7990E295845CB00CD3D3E /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7990D295845CB00CD3D3E /* UserStatsView.swift */; };
 		99D79910295848D200CD3D3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7990F295848D200CD3D3E /* ContentView.swift */; };
 		99D7991229584CC200CD3D3E /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7991129584CC200CD3D3E /* SideMenuOptionRowView.swift */; };
+		99D799172959055000CD3D3E /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D799162959055000CD3D3E /* NewTweetView.swift */; };
+		99D799192959062F00CD3D3E /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D799182959062F00CD3D3E /* TextArea.swift */; };
+		99D7991E29590A7C00CD3D3E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7991D29590A7C00CD3D3E /* LoginView.swift */; };
+		99D7992029590A8900CD3D3E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7991F29590A8900CD3D3E /* RegistrationView.swift */; };
+		99D7992229590BCF00CD3D3E /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D7992129590BCF00CD3D3E /* RoundedShape.swift */; };
+		99D799242959184000CD3D3E /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D799232959184000CD3D3E /* CustomInputField.swift */; };
+		99D79927295919E500CD3D3E /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79926295919E500CD3D3E /* AuthenticationHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,13 @@
 		99D7990D295845CB00CD3D3E /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		99D7990F295848D200CD3D3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99D7991129584CC200CD3D3E /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		99D799162959055000CD3D3E /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		99D799182959062F00CD3D3E /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		99D7991D29590A7C00CD3D3E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		99D7991F29590A8900CD3D3E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		99D7992129590BCF00CD3D3E /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		99D799232959184000CD3D3E /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		99D79926295919E500CD3D3E /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				99D798E2295821AF00CD3D3E /* Components */,
+				99D7991A29590A6100CD3D3E /* Authentication */,
+				99D799132959053200CD3D3E /* UploadTweet */,
 				99D799042958441C00CD3D3E /* SideMenu */,
 				99D798F2295829B800CD3D3E /* Profile */,
 				99D798F12958299900CD3D3E /* Explore */,
@@ -138,8 +154,12 @@
 		99D798E2295821AF00CD3D3E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				99D79925295919D600CD3D3E /* Authentication */,
 				99D7990129583DD600CD3D3E /* Users */,
 				99D798E9295822B600CD3D3E /* Tweets */,
+				99D799182959062F00CD3D3E /* TextArea.swift */,
+				99D7992129590BCF00CD3D3E /* RoundedShape.swift */,
+				99D799232959184000CD3D3E /* CustomInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -285,6 +305,63 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		99D799132959053200CD3D3E /* UploadTweet */ = {
+			isa = PBXGroup;
+			children = (
+				99D799142959053E00CD3D3E /* ViewModels */,
+				99D799152959054300CD3D3E /* Views */,
+			);
+			path = UploadTweet;
+			sourceTree = "<group>";
+		};
+		99D799142959053E00CD3D3E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		99D799152959054300CD3D3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99D799162959055000CD3D3E /* NewTweetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99D7991A29590A6100CD3D3E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				99D7991C29590A6F00CD3D3E /* ViewModel */,
+				99D7991B29590A6900CD3D3E /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		99D7991B29590A6900CD3D3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99D7991D29590A7C00CD3D3E /* LoginView.swift */,
+				99D7991F29590A8900CD3D3E /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99D7991C29590A6F00CD3D3E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		99D79925295919D600CD3D3E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				99D79926295919E500CD3D3E /* AuthenticationHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,18 +436,25 @@
 				99D798FC29582B8600CD3D3E /* ProfileView.swift in Sources */,
 				99D7990A2958444800CD3D3E /* SideMenuRowView.swift in Sources */,
 				99D798EB295822D300CD3D3E /* TweetRowView.swift in Sources */,
+				99D79927295919E500CD3D3E /* AuthenticationHeaderView.swift in Sources */,
 				99D798FE295830F700CD3D3E /* TweetFilterViewModel.swift in Sources */,
 				99D798E82958220600CD3D3E /* FeedView.swift in Sources */,
+				99D799242959184000CD3D3E /* CustomInputField.swift in Sources */,
 				99D799082958443C00CD3D3E /* SideMenuView.swift in Sources */,
+				99D799192959062F00CD3D3E /* TextArea.swift in Sources */,
 				99D798D029580BE500CD3D3E /* TwitterSwiftUIYoutubeAppApp.swift in Sources */,
 				99D798F4295829CD00CD3D3E /* ExploreView.swift in Sources */,
+				99D799172959055000CD3D3E /* NewTweetView.swift in Sources */,
 				99D7990C2958445700CD3D3E /* SideMenuViewModel.swift in Sources */,
 				99D7990329583DE400CD3D3E /* UserRowView.swift in Sources */,
 				99D79910295848D200CD3D3E /* ContentView.swift in Sources */,
+				99D7992229590BCF00CD3D3E /* RoundedShape.swift in Sources */,
 				99D7991229584CC200CD3D3E /* SideMenuOptionRowView.swift in Sources */,
 				99D798EE295828DB00CD3D3E /* MainTabView.swift in Sources */,
+				99D7991E29590A7C00CD3D3E /* LoginView.swift in Sources */,
 				99D798F6295829DE00CD3D3E /* NotificationsView.swift in Sources */,
 				99D7990E295845CB00CD3D3E /* UserStatsView.swift in Sources */,
+				99D7992029590A8900CD3D3E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
